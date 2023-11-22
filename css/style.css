@@ -6,10 +6,20 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow: hidden;
+}
+
 /* Generics */
 
 body {
-    font-family: sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #FFFF00;
 }
 
 /* Utils */
@@ -17,4 +27,31 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.bcg-red {
+    background-color: red;
+}
+.bcg-green {
+    background-color: #008000;
+}
+.bcg-yellow {
+    background-color: #FFFF00;
+}
+
+.text-green {
+    color: green;
+}
+
+.full-page {
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    translate: -50% -50%;
 }
